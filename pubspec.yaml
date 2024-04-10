@@ -1,0 +1,64 @@
+name: flutter_birds
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+2
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1
+  flutter_svg: ^1.1.6
+  intl: ^0.18.0
+  photo_view: ^0.14.0
+  just_audio: ^0.9.32
+  audioplayers: ^5.2.0
+  async: ^2.10.0
+  path: ^1.8.3
+  carousel_slider: ^4.2.1
+  flutter_carousel_widget: ^2.1.2
+  url_launcher: ^6.1.14
+  webview_flutter: ^4.4.1
+  google_nav_bar: ^5.0.6
+  adaptive_theme: ^3.4.1
+  flutter_launcher_icons: "^0.13.1"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/images/small/
+    - assets/images/big/
+    - assets/images/maps/
+    - assets/images/redbook/
+    - assets/sounds/
+    - assets/sample.txt
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icons/logo.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/icons/logo256.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/logo.png"
